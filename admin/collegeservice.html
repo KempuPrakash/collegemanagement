@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Service</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="favicon_collegeservice.png" type="image/x-icon">
+    <link rel="stylesheet" href="studentservice.css">
+    <link rel="stylesheet" href="styleadmin.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Modal for Payments -->
+        <div class="modal fade" id="myModal4" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="au.png" alt="" class="auimg1">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">Payments</h2>
+                    </div>
+                    <div class="modal-body" id="body1">
+                        <span>Our Students have done tremendous work on this project. <br> Please donate some amount to support our students.</span><br><br>
+                        <center>
+                            <div class="flip-box">
+                                <div class="flip-box-inner">
+                                    <div class="flip-box-front">
+                                        <img src="au.png" alt="" class="img21">
+                                    </div>
+                                    <div class="flip-box-back">
+                                        <img src="payment.jpeg" alt="" class="img21">
+                                    </div>
+                                </div>
+                            </div>
+                        </center><br><br>
+                        <a href="https://play.google.com/store/apps/details?id=com.phonepe.app&hl=en_IN&gl=US"><img src="phonepay.png" alt="" class="payimg"></a>
+                        <a href="https://play.google.com/store/apps/details?id=net.one97.paytm&hl=en_IN&gl=US"><img src="paytm.png" alt="" class="payimg"></a>
+                        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiHwPLVn-_6AhXXfCsKHSZ6B7oYABABGgJzZg&ohost=www.google.co.in&cid=CAESa-D2610zq4wqJlU06JngB9I4SCO6ItAhTi-YlRZTDyV_Nj8GxiboNBNL6JhZKvDZYsQAFKVg4qwHDOs9S7a80dcOLueuEH_nTXDDktc1mdZlTtP_rhgsc0yAoh6CAhh2AOOeaDyZ0zUU3te2&sig=AOD64_3KFzSa5QbM68evgFJTwB6eZrbyrw&adurl&ved=2ahUKEwiWsurVn-_6AhX8JrcAHeldA7cQqyQoAHoECAkQBQ"><img src="googlepay.png" alt="" class="payimg"></a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="closebtn" data-dismiss="modal">Close</button>
+                        <span><center>@Anurag University</center></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for SignUp -->
+        <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="au.png" alt="" class="auimg1">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">SignUp</h2>
+                    </div>
+                    <div class="modal-body" id="body1">
+                        <form method="POST" action="clg_signup_submit.php">
+                            <input type="text" name="id" placeholder="Enter your ID Card NO."><br>
+                            <input type="text" name="name" placeholder="Enter your Name"><br>
+                            <input type="text" name="roll" placeholder="Enter your Role"><br>
+                            <select name="dept">
+                                <option value="">Select Department</option>
+                                <option value="2">CSE</option>
+                                <option value="4">CS</option>
+                                <option value="5">CE</option>
+                                <option value="6">ECE</option>
+                                <option value="7">EEE</option>
+                                <option value="8">MECH</option>
+                            </select><br>
+                            DOB:
+                            <input type="date" name="dob"><br><br>
+                            <button class="btn btn-primary" name="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="closebtn" data-dismiss="modal">Close</button>
+                        <span><center>@Anurag University</center></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Login -->
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="au.png" alt="" class="auimg1">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">Login</h2>
+                    </div>
+                    <div class="modal-body" id="body1">
+                        <form method="POST" action="login_submit.php">
+                            <input type="text" name="id" placeholder="Enter your ID Card NO."><br>
+                            DOB:
+                            <input type="date" name="dob"><br><br>
+                            <button class="btn btn-primary" name="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" id="closebtn" data-dismiss="modal">Close</button>
+                        <span><center>@Anurag University</center></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="header">
+        <nav class="navbar">
+            <img src="au.png" alt="" class="auimg">
+            <div class="navbar-box">
+                <h3 class="heading-tertiary">COLLEGE SERVICE</h3>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link-book" data-modal="myModal1" data-toggle="modal" data-target="#myModal1">College SignUp</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link-book" data-modal="myModal2" data-toggle="modal" data-target="#myModal2">College Login</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="anuragcet.html" class="navbar-link-book">Anuragcet Portal</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link-book" data-modal="myModal4" data-toggle="modal" data-target="#myModal4">Payments</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="toggle">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="header-container">
+            <div class="video">
+                <img src="collegeservice.jpeg" alt="" class="imgst1">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
