@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Suraj Kupate">
+   <title>ANURAG UNIVERSITY</title>
+   <link rel="stylesheet" href="web.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="icon" href="favicon_au.ico" type="image/x-icon">
+   <link rel="stylesheet" href="studentservice.css">
+   <link rel="stylesheet" href="styleadmin.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div class="container">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title" style="color: white;">REGISTER</h2>
+            </div>
+            <div class="modal-body" id="body1">
+               <form method="POST" action="register_submit.php">
+                  <input type="text" name="email" placeholder="Enter your Email"><br>
+                  <input type="text" name="contact" placeholder="Enter your Contact"><br>
+                  <button class="btn btn-primary" name="submit">Submit</button>
+               </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" id="closebtn" data-dismiss="modal">Close</button>
+              <span><center>@Anurag University</center></span>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+
+   <nav class="navlist">
+      <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Course</a></li>
+         <li><a href="#">Faculty</a></li>
+      </ul>
+   </nav>
+
+   <div class="main-box">
+      <center><h1 style="color: #120541; background-color: aliceblue; width: 410px;">ANURAG UNIVERSITY</h1></center>
+      <h2><p style="color: black;">India's One Of The Best Engineering Colleges</p></h2>
+      <button data-toggle="modal" data-target="#myModal1">REGISTER</button>
+   </div>
+
+   <div class="container">
+      <h2 style="color:#120541;">FACILITIES</h2>
+      <div class="row">
+         <div class="column">
+            <a href="#"><img src="au.jpe" alt=""></a>
+            <a href="video.html">CAMPUS</a>
+         </div>
+         <div class="column">
+            <a href="#"><img src="admin2.jpeg" alt=""></a>
+            <a href="admin/adminindex.html">ADMINISTRATION</a>
+         </div>
+         <div class="column">
+            <a href="#"><img src="Cafeteria.jpg" alt=""></a>
+            <a href="canteen/canteen.html">CAFETERIA</a>
+         </div>
+         <div class="column">
+            <a href="#"><img src="library.jpg" alt=""></a>
+            <a href="library/library.html">LIBRARY</a>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
